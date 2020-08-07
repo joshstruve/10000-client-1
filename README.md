@@ -1,6 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## It Only Takes 10,000 Hours
 
 In the project directory, you can run:
 
