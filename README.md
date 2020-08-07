@@ -13,7 +13,7 @@ To use the app, simply:
 2. Log In (assuming that you have already registered)
 ![Login Page](./screenshots/10000-login.png "Login")
 
-3. Add Skills
+3. Add a Skill
 ![Add Skill Page](./screenshots/10000-addskill.png "Add Skill")
 
 4. Track Your Progress
