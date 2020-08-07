@@ -1,4 +1,4 @@
-this is still in progress - stop being nosy
+in progress...
 
 ## It Only Takes 10,000 Hours
 
