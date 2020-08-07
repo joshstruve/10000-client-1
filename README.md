@@ -16,7 +16,7 @@ To use the app, simply:
 ![Login Page](./screenshots/10000-login.png "Login")
 
 3. Add Skills
-![Skills Page](./screenshots/10000-skills.png "Skills")
+![Skills Page](./screenshots/10000-skills.png "Add Skill")
 
 4. Track Your Progress
 ![Skills Page](./screenshots/10000-skills.png "Skills")
