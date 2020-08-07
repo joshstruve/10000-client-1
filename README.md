@@ -20,7 +20,7 @@ To use the app, simply:
 ![Skills Page](./screenshots/10000-skills.png "Skills")
 
 ## Technology Stack
-10000 is build using the PERN stack, which includes PostgreSQL, Express, React and Node.
+10000 is built using the PERN stack, which includes PostgreSQL, Express, React and Node.
 
 ## Design Pattern
 10000 uses a "soft" neumorphic design pattern to ensure modernity and a pleasant user experience.
