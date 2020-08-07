@@ -23,3 +23,6 @@ To use the app, simply:
 
 ## Technology Stack
 10000 is build using the PERN stack, which includes PostgreSQL, Express, React and Node.
+
+## Design Pattern
+10000 uses a "soft" neumorphic design pattern for a pleasing user experience.
