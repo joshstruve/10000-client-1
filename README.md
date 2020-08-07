@@ -5,11 +5,14 @@ In his book [Outliers](https://en.wikipedia.org/wiki/Outliers_(book)), Malcom Gl
 ## 10000
 ...
 
-Home Page
+Home
 ![Home Page](./screenshots/10000-home.png "Home Page")
 
-Login Page
+Login
 ![Login Page](./screenshots/10000-login.png "Login")
+
+Skills
+![Skills Page](./screenshots/10000-skills.png "Skills")
 
 ## Technology Stack
 10000 is build using the PERN stack, which includes PostgreSQL, Express, React and Node.
