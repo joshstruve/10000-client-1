@@ -1,6 +1,6 @@
 ## It Only Takes 10,000 Hours
 
-In the project directory, you can run:
+(https://en.wikipedia.org/wiki/Outliers_(book))
 
 ### `npm start`
 
