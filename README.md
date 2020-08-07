@@ -1,6 +1,6 @@
 ## It Only Takes 10,000 Hours
 
-(https://en.wikipedia.org/wiki/Outliers_(book))
+[link](https://en.wikipedia.org/wiki/Outliers_(book))
 
 ### `npm start`
 
