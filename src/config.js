@@ -1,4 +1,4 @@
 export default {
-    API_ENDPOINT: 'http://localhost:8000/api',
+    API_ENDPOINT: 'https://cryptic-peak-37715.herokuapp.com/api',
     TOKEN_KEY: '10000-client-auth-token',
   }

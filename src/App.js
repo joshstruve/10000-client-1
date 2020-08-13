@@ -7,7 +7,6 @@ import Register from './routes/Register'
 import Skills from './routes/Skills'
 import AddSkill from './routes/AddSkill'
 
-import PublicOnlyRoute from './components/Utils/PublicOnlyRoute';
 import PrivateRoute from './components/Utils/PrivateRoute';
 import TokenService from './services/token-service';
 
@@ -32,8 +31,8 @@ export default class App extends Component {
       <main className="App">
         <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/skills' component={Skills} />
-        <Route path='/addskill' component={AddSkill} />
+        <PrivateRoute path='/skills' component={Skills} />
+        <PrivateRoute path='/addskill' component={AddSkill} />
         <Route path='/login' component={props => <Login {...props} handleLogIn={this.handleLogIn}/>}/>
         <Route path='/register' component={props => <Register {...props} handleLogIn={this.handleLogIn}/>}/>
         </Switch>

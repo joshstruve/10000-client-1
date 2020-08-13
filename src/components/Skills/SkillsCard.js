@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import config from '../../config'
 import TokenService from '../../services/token-service'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Timer from 'react-compound-timer'
 
 export default class SkillsCard extends Component {
@@ -10,12 +10,11 @@ export default class SkillsCard extends Component {
         this.state = {
             time_left:this.props.skill.time_left,
             error:null,
-            loading:false,
+            loading:false
         }
     }
     
     handleStopClick = (time) => {
-        console.log(time)
         this.setState({error:null,loading:true})
     
         fetch(`${config.API_ENDPOINT}/skills/${this.props.skill.id}`,{
@@ -43,11 +42,9 @@ export default class SkillsCard extends Component {
 
 
     handleDeleteClick = (e) => {
-        this.setState({error:null,loading:true})
-        const id = e.target.closest('li').id
+        this.setState({error:null,loading:true})    
     
-    
-        fetch(`${config.API_ENDPOINT}/:skillId`,{
+        fetch(`${config.API_ENDPOINT}/skills/${this.props.skill.id}`,{
           method:'DELETE',
           headers: {
             'content-type':'application/json',
@@ -58,23 +55,20 @@ export default class SkillsCard extends Component {
         ?res.json().then(e => Promise.reject(e))
         :res)
         .then(() => {
-          const newResults = this.state.results.filter(result => result.id !== Number(id))
-    
-          this.setState({results:newResults,loading:false})
+          this.props.deleteSkill(this.props.skill.id)
         })
         .catch(error => {
           this.setState({error,loading:false})
         })
     }  
     
-    
     render() {
-        console.log(this.state)
         return (
+          <li>
             <div className="skills-card">
                 <div className="skills-card-header">
                     <h3>{this.props.skill.title}</h3>
-                    <div>delete</div>
+                    <button className="button-secondary" onClick={this.handleDeleteClick}>Delete</button>
                 </div>
                 <div>
                     <Timer
@@ -83,7 +77,7 @@ export default class SkillsCard extends Component {
                     startImmediately={false}
                     lastUnit="h"
                     >
-                    {({ start, pause, timerState, getTime }) => (
+                    {({ start, pause, getTime }) => (
                         <React.Fragment>
                             <div className="timer">
                                 <Timer.Hours />: 
@@ -101,6 +95,7 @@ export default class SkillsCard extends Component {
                     </Timer>
                 </div>
             </div>
+          </li>
         )
     }}
 

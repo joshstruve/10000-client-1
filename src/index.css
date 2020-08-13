@@ -94,7 +94,6 @@ h4 {
 .footer {
   padding:0px 0;
   text-align: right;
-  /* box-shadow: 3px 3px 6px #212121, -3px -3px 6px #484848; */
 }
 
 .footer-text {
@@ -121,7 +120,6 @@ h4 {
   min-width: 150px;
   padding:15px 30px;
   border-color: transparent;
-  /* box-shadow: 3px 3px 6px #c2c2c2, -3px -3px 6px #fff; */
   cursor: pointer;
   border-radius: .3rem;
   color: #d500f9;
@@ -129,32 +127,34 @@ h4 {
   border:1px solid #d500f9;
 }
 
-.button-primary:active, .button-primary:focus {
+.button-primary:active {
   outline: none;
   box-shadow: inset 2px 2px 6px #babdbe, inset -3px -3px 6px #ffffff;
+}
+
+.button-primary:focus {
+  outline: none;
+  border:1px solid #d500f9;
 }
 
 .button-secondary {
-  min-width: 150px;
-  padding:15px 30px;
+  font-size: .9rem;
   border-color: transparent;
-  /* box-shadow: 3px 3px 6px #c2c2c2, -3px -3px 6px #fff; */
   cursor: pointer;
   border-radius: .3rem;
-  color: #aa00ff;
+  color: #263238;
   background-color: #eceff1;
 }
 
-.button-secondary:active, .button-secondary:focus {
+.button-secondary:active, .button-secondary:focus, .button-secondary:hover {
   outline: none;
-  box-shadow: inset 2px 2px 6px #babdbe, inset -3px -3px 6px #ffffff;
+  color: #aa00ff;
 }
 
 .button-home {
   min-width: 150px;
   padding:15px 30px;
   border-color: transparent;
-  /* box-shadow: 3px 3px 6px #c2c2c2, -3px -3px 6px #fff; */
   cursor: pointer;
   border-radius: .3rem;
   color: #d500f9;
@@ -215,16 +215,6 @@ a.nav:active {
   background-color: #eceff1;
 }
 
-.skills-section-header {
-  padding:15px 0 15px 15px;
-  margin:0px 0;
-  box-shadow: 2px 2px 4px #babdbe, -2px -2px 4px #ffffff;
-  border-radius: .3rem;
-  background-color: #eceff1;
-  display: flex;
-  justify-content: space-between;
-}
-
 .card-container {
   display: flex;
   flex-direction: row;
@@ -255,9 +245,16 @@ a.nav:active {
 .spacer-h {
   padding: 0 7.5px 0 7.5px;
 }
+.spacer-v {
+  padding: 7.5px 0 7.5px 0;
+}
 
 .card-spacer-v {
   padding: 7.5px 0 7.5px 0;
+}
+
+li {
+  list-style: none;
 }
 
 .skills-card {
@@ -270,11 +267,10 @@ a.nav:active {
 }
 
 .skills-card-header {
-display: flex;
-justify-content: space-between;
-/* margin-bottom:15px; */
-align-items: center;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
 
 .skills-card-header-item-label {
   display: flex;
@@ -297,7 +293,6 @@ align-items: center;
   font-family: 'donovanregular';
   font-size: 5rem;
 }
-  
 
 .skills-card-label {
   text-align: left;
@@ -373,12 +368,12 @@ fieldset {
 }
 
 .form-container {
-display: flex;
-flex-direction: column;
-height: 90vh;
-justify-content: center;
-margin: auto;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
 }
 
 .align-left-wrapper {

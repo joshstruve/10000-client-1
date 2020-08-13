@@ -5,9 +5,15 @@ import TokenService from './../services/token-service'
 import Header from '../components/Header/Header'
 import SkillsCard from '../components/Skills/SkillsCard'
 
-export default class Home extends Component {
+export default class Skills extends Component {
     state = {
         skills:[]
+    }
+
+    deleteSkill (skillId){
+      const skills = this.state.skills.filter(skill => skill.id !== skillId)
+
+      this.setState({skills})
     }
 
     componentDidMount(){
@@ -32,7 +38,7 @@ export default class Home extends Component {
     }
 
     render() {
-        const skills = this.state.skills.map(skill => <SkillsCard skill={skill} key={skill.id} /> )
+        const skills = this.state.skills.map(skill => <SkillsCard skill={skill} key={skill.id} deleteSkill={this.deleteSkill.bind(this)}/> )
         
         return (
             <div>
@@ -42,7 +48,6 @@ export default class Home extends Component {
                     <h2>Skills</h2>
                     </div>
                     {skills}
-                    {/* <SkillsCard /> */}
                     <div className="button-center-container">
                     <Link to='/addskill'>
                     <button className="button-primary">Add Skill</button>

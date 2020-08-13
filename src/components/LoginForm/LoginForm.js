@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import config from '../../config'
 import TokenService from '../../services/token-service'
 
@@ -38,6 +39,7 @@ export default class LoginForm extends React.Component {
 
   render() {
     const {error} = this.state
+    console.log(error)
     return (
       <div>
         <form onSubmit={this.handleLoginSubmit}>
@@ -54,11 +56,16 @@ export default class LoginForm extends React.Component {
               </div>
               <div>
                 <button className="button-primary">Log In</button>
+                <br></br>
+                <div className="spacer-v"></div>
+                <Link to='/register'>
+                <button className='button-home'>Register</button>
+                </Link>
               </div>
             </div>
           </fieldset>
         </form>        
-        {error && <div>{error}</div>}
+        {error && <div>{error.error}</div>}
       </div>
     )
   }  
