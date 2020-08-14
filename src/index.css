@@ -395,6 +395,12 @@ input {
 
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size:1.6rem;
+  }
+  .hero-text {
+    max-width: 90%;
+  }
   .card-container {
     flex-direction: column;
   }
@@ -403,6 +409,7 @@ input {
   }
   .hero {
     background: none;
+    height: 85vh;
   }
   .skills-card-data-item {
     min-width: 33%;
