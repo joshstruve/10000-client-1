@@ -1,4 +1,4 @@
-## It Only Takes 10,000 Hours
+# It Only Takes 10,000 Hours
 
 In his book [Outliers](https://en.wikipedia.org/wiki/Outliers_(book)), Malcom Gladwell explains that reaching the 10,000-Hour Rule, which he considers the key to success in any field, is simply a matter of practicing a specific task for 10,000 hours, or 20 hours of work a week for 10 years. But despite the nobility of such an endeavor, accurately tracking progress up to 10,000 hours can be an overwhelming task in and of itself.
 
@@ -27,4 +27,5 @@ To use the app, simply:
 
 ## Links
 Live App: https://10000-app.vercel.app/
+
 API Repo: https://github.com/thinkful-ei-panda/10000-api
