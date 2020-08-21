@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import config from '../../config'
 import TokenService from '../../services/token-service'
-import { Link } from 'react-router-dom'
 import Timer from 'react-compound-timer'
 
 export default class SkillsCard extends Component {
@@ -24,7 +23,6 @@ export default class SkillsCard extends Component {
             'Authorization':`bearer ${TokenService.getAuthToken()}`,
           },
           body:JSON.stringify({time_left: time
-
           }) 
         })
         .then(res => !(res.ok)
@@ -98,7 +96,3 @@ export default class SkillsCard extends Component {
           </li>
         )
     }}
-
-
-
-      // place event handler on stop to send timer to backend, start button fetches remaining time to begin countdown
