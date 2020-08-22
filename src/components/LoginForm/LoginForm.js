@@ -52,14 +52,14 @@ export default class LoginForm extends React.Component {
               </div>
               <div>
                 <label htmlFor="password" hidden>Password</label>
-                <input type="password" name="password" id="password" placeholder="password"/>
+                <input type="password" name="password" id="password" placeholder="password (8 characters or more)"/>
               </div>
               <div>
                 <button className="button-primary">Log In</button>
                 <br></br>
                 <div className="spacer-v"></div>
                 <Link to='/register'>
-                <button className='button-home'>Register</button>
+                <button className='button-primary'>Register</button>
                 </Link>
               </div>
             </div>

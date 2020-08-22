@@ -71,7 +71,7 @@ export default class RegistrationForm extends React.Component {
               </div>
               <div>
                 <label htmlFor="password" hidden>Password</label>
-                <input name="password" id="password" placeholder="password" />
+                <input type="password" name="password" id="password" placeholder="password (8 characters or more)" />
               </div>
               <div>
                 <button className="button-primary">Register</button>

@@ -29,7 +29,6 @@ export default class Skills extends Component {
         ?res.json().then(e => Promise.reject(e))
         :res.json())
         .then(res => {
-          console.log(res)
             this.setState({skills:res,loading:false})
         })
         .catch(error => {
